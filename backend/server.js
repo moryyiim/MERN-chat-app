@@ -17,6 +17,7 @@ app.get('/api/chat', (req, res) => {
 });
 
 app.get('/api/chat/:id', (req, res) => {
+  ``;
   //   console.log(req.params.id);
 
   //   Finds the id of a single chat to display the data
