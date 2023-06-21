@@ -1,8 +1,9 @@
 const express = require('express');
 const chats = require('./data/data');
 const dotenv = require('dotenv');
+const colors = require('colors');
 
-dotenv.config();
+dotenv.config({ path: './config/config.env' });
 
 const app = express();
 
@@ -25,4 +26,7 @@ app.get('/api/chat/:id', (req, res) => {
   res.send(singleChat);
 });
 
-app.listen(`${PORT}`, console.log(`Server is running on ${PORT}`));
+app.listen(
+  PORT,
+  console.log(`Server running on port ${PORT}`.cyan.underline.bold)
+);
