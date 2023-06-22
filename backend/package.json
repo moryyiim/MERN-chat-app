@@ -9,12 +9,6 @@
     "server": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+  "author": "Morelen Yim",
+  "license": "ISC"
 }

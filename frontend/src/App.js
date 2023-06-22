@@ -55,17 +55,20 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import ChatPage from './pages/ChatPage';
 import Error from './pages/Error';
+import './App.css';
 
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/chats' element={<ChatPage />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
+      <div className='app-container'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/chats' element={<ChatPage />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
+      </div>
     </>
   );
 };
